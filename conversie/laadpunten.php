@@ -48,7 +48,8 @@ date_default_timezone_set("CET");
                 );
             $json["features"] = Array();            
             
-            $this->client = new SoapClient("https://api.essent.nl/partner/a2a/cs/getStaticChargingStations?wsdl");
+            //$this->client = new SoapClient("https://api.essent.nl/partner/a2a/cs/getStaticChargingStations?wsdl");
+            $this->client = new SoapClient("https://emobilitygetstatchargingpointvipprdnl.azurewebsites.net/GetStatChargingStationProxy.svc?wsdl");
         }
         
         function getDataAmsterdam(){
